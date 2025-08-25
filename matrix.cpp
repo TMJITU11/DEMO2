@@ -7,6 +7,9 @@ for(int i=0;i<row;i++){
         cout<<m[i][j]<<" ";
     }
     cout<<endl;
+
+
+
 }
 }
 
@@ -30,6 +33,11 @@ int main (){
     }
     printMatrix(m,row,column);
 
+    cout <<endl;
+    //deallocate memory
+    for(int i=0;i<row;i++){
+        delete [] m[i];
+    }
 
 
 
